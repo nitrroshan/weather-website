@@ -11,7 +11,7 @@ const forecast=(lat,lon,callback)=>{
             callback(body.message,undefined)
 
         }else{
-            callback(undefined,`The outside temprature is ${body.current.temp}.The weather is ${body.current.weather[0].main}`)
+            callback(undefined,`The outside temprature is ${body.current.temp}.The weather is ${body.current.weather[0].main} & ${body.current.clouds}% chances of precepitation`)
         }
    
     })
